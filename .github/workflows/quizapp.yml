@@ -32,9 +32,7 @@ jobs:
         cmd: install
     - name: Build React App
       run: yarn build
-      # Install Surge
     - name: Install surge
       run: npm install -g surge
-      # Deploy Surge 
     - name: Deployment of app to surge
-      run: surge ./build quizappinreactjs.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build quizapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
