@@ -35,4 +35,4 @@ jobs:
     - name: Install surge
       run: sudo npm install --global surge
     - name: Deployment of app to surge
-      run: surge ./build quizapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build quizappinreact2021.surge.sh --token ${{secrets.SURGE_TOKEN}}
